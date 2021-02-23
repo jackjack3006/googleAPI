@@ -1,7 +1,5 @@
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
-import gspread
-
 
 def read(hi):
     SERVICE_ACCOUNT_FILE = 'new.json'

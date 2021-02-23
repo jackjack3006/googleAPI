@@ -6,3 +6,17 @@ for i in read:
     for j in i:
         if j == consumer:
             print("The consumer's food is", i[1])
+
+a = 1
+
+k = 0
+while k <= 5:
+    consumer_column = "Sheet1!A" + str(a) + ":A" + str(a + 1)
+    food_column = "Sheet1!B" + str(a) + ":B" + str(a + 1)
+
+    consumer1 = input("Enter you name ")
+    food = input("Enter the food that you need to order ")
+
+    a += 1
+    k += 1
+
