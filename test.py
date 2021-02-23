@@ -1,4 +1,3 @@
-import read
-nice = read.read("Sheet1!A1:D4")
-print(nice)
-read.write("Hello!:B2:B3")
+import sheet
+sheet.write("aaaamohitaaaa","Sheet1!D7:D8")
+print(sheet.read("Sheet1!A2:A2"))
