@@ -1,11 +1,12 @@
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
-creds = None
+import gspread
+
 
 def read(hi):
     SERVICE_ACCOUNT_FILE = 'new.json'
     SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
-
+    creds = None
     creds = service_account.Credentials.from_service_account_file(
         SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 
@@ -25,6 +26,8 @@ def read(hi):
 def write(hi):
     SERVICE_ACCOUNT_FILE = 'new.json'
     SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
+
+    creds = None
 
     creds = service_account.Credentials.from_service_account_file(
         SERVICE_ACCOUNT_FILE, scopes=SCOPES)
