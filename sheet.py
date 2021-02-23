@@ -23,7 +23,7 @@ def read(hi):
     return values
 
 
-def write(aa,bb):
+def write(aa, bb):
     SERVICE_ACCOUNT_FILE = 'new.json'
     SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
     creds = None
@@ -37,7 +37,6 @@ def write(aa,bb):
 
     # Call the Sheets API
     sheet = service.spreadsheets()
-    a=[[aa]]
-    request=sheet.values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID, range=bb, valueInputOption="USER_ENTERED", body={"values":a}).execute()
-
-
+    a = [[aa]]
+    request = sheet.values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID, range=bb, valueInputOption="USER_ENTERED",
+                                    body={"values": a}).execute()
