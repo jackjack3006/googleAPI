@@ -17,6 +17,7 @@ while k <= 5:
     consumer1 = input("Enter you name ")
     food = input("Enter the food that you need to order ")
 
+    sheet.write(consumer1, food)
+
     a += 1
     k += 1
-
